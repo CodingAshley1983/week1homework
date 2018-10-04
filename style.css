@@ -81,9 +81,9 @@ body {
 
     }
     .image {
-        position: absolute;
+        position: fixed;
         top: 148px;
-        left: 360px;  
+        left: 300px;  
         margin-top: 8%;
 
 
@@ -94,7 +94,7 @@ body {
         float: right;
        width: 50%;
        margin-right: 10%;
-        padding-top: 3%;
+        padding-top: 1%;
         padding-right: 5%;
 
     }
