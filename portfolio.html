@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <style>
 .topField   { 
@@ -34,6 +35,118 @@ font-weight: 400;
 text-align: center;
 
 }
+/* Navigation */
+nav {
+        background-color: white;
+        position: absolute;
+        top: 95px;
+        padding: 10px;
+        right: 262px;
+        height: 40px;
+        width: 211px;
+        margin-right: 1%;   
+        margin-bottom: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    
+
+}
+
+/* <!-- Fun Wobble effect on the nav bar! --> */
+a i {
+    font-size: 35px;
+    color: purple;
+}
+
+/* Wobble Top */
+@-webkit-keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+  
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+  
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+  
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+  
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+  
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  
+  @keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+  
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+  
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+  
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+  
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+  
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  
+  .hvr-wobble-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
 body {
     background-image: url(https://s3.envato.com/files/56157806/DSC_6504dd_pr.jpg);
 }
@@ -96,7 +209,7 @@ body {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5); 
     transition: ease-in-out 1s;
-    transform: scale(1.5); 
+    -ms-transform-origin-z: scale(2); 
     
      }
 
@@ -117,10 +230,10 @@ body {
         margin-top:15%;
     }
  
-    a:hover { 
+    /* a:hover { 
     background-color: purple;
-    opacity: 80%;
-}
+    opacity: 80%; */
+/* } */
 
           </style>
 </head>
@@ -133,10 +246,12 @@ body {
         
 
         
-        <nav> <a href="index.html" target="_Blank">Home</a> |
-            <a href="portfolio.html" target="_Blank"> Portfolio</a> |
-            <a href="contact.html" target="_Blank">Contact</a>
-       </nav>
+        <nav>
+                <a href="index.html",a href="#" class="hvr-wobble-top"><i class="fas fa-home"></i></a> |
+                <a href="portfolio.html",a href="#" class="hvr-wobble-top"><i class="far fa-eye"></i></a> |
+                <a href="contact.html", a href="#" class="hvr-wobble-top"><i class="far fa-envelope"></i></a>
+           </nav>
+           
         <hr>        
     </div>
 
