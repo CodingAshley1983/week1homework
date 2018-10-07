@@ -209,10 +209,11 @@ body {
     }
 
     /* Media Queries for Index page */
-   @media screen and (max-width: 1060px) {
+   @media screen and (max-width: 950px) {
    
     .myName {
       position: static;
+      padding-right; 52%;
     }
 
     h2 {

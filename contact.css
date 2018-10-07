@@ -195,12 +195,11 @@ body {
    
     /* MEDIA QUERIES */
     
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 950px) {
           
   .about {
       position: static;
-      top: 108px;
-      left: 10px;
+      padding-right: 52%;
   }
     
     
