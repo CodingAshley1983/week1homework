@@ -1,4 +1,3 @@
-/* Top section */
 .topField   { 
     background-color: #ffffff;
     font-family: cursive;
@@ -7,8 +6,25 @@
     margin: 0;
     
 }
-    /* Navigation */
+    
     nav {
+        background-color: white;
+position: absolute;
+top: 95px;
+padding: 10px;
+right: 262px;
+height: 40px;
+width: 211px;
+margin-right: 1%;   
+margin-bottom: 2%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 400;
+text-align: center;
+
+}
+/* Navigation */
+nav {
         background-color: white;
         position: absolute;
         top: 95px;
@@ -119,87 +135,51 @@ a i {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
-  
-/* old Hover effect on Nav bar
-a:hover { 
-    background-color: purple;
-    opacity: 80%;
-} */
-
 body {
-
-    background-image: url(https://s3.envato.com/files/56157806/DSC_6504dd_pr.jpg)
+    background-image: url(https://s3.envato.com/files/56157806/DSC_6504dd_pr.jpg);
 }
 
-/* Ashley */
-    .myName { 
+
+    .about { 
         background-color: teal;
         height: 50px;
         width: 250px;
         font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
         text-align: center;
         position:absolute;
-        top: 100px;
+        top: 80px;
         left: 300px;  
 
     }
-
-    /* Main area */
-    .content {
-
-        background-color: white;
-        height: 500px;
-        width: 67%;
-        margin: 0 19%;
-        padding-left: 2%;
-        margin-bottom:2%;
-    
+    .container {
+        padding: 5%;
+        background-color: black;    
+        height: 700px;
+        width: 400px;
+        margin: 0 auto;
     }
-     /* Quote */
-     h3 { 
+
+.form {
     
-      padding-top: 2%;
-    
-  }
-/* About me: */
+    height: 600px;
+}
+
+
+
      h2 {
         background-color: white;
         height: 50px;
         width: 250px;
         font-size: 28px;
-
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         color:teal;
         text-align: center;
         float: left;
-       
      }
 
-
-    .image {
-       
-        float: left;
-        width: 25%;
-        margin-top: 1%;
-        margin-right: 2%;
-        
-    
-    }
-
-    /* My bio */
-    p {
-       
-        float: right;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
-        width: 60%;
-        margin-right: 10%;
-    
-    }
-       
     
     .footer {
         background-color: teal;
@@ -208,52 +188,45 @@ body {
         width: 100%;
     }
 
-    /* Media Queries for Index page */
-   @media screen and (max-width: 1060px) {
-    .myName {
+    .list {
+    
+        margin-left: 250px;
+}
+   
+    /* MEDIA QUERIES */
+    
+@media screen and (max-width: 1050px) {
+          
+  .about {
       position: static;
-    }
-
-    h2 {
-      margin-bottom: 0%;
-    }
-    .content {
-      width: 100%;
-      height: 800px;
-    }
-    h3 { 
-    
-      padding-top: 0;
-      float: left;
-      font-size: 12px;
-    
+      top: 108px;
+      left: 10px;
   }
-    image { 
-      width: 35%;
-      margin-top: 0%
+    
+    
+    .nav {
+      background-color: white;
+position: absolute;
+top: 8px;
+padding: 10px;
+height: 40px;
+width: 211px;
+margin-right: 1%;   
+margin-bottom: 2%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 400;
+text-align: center;;
     }
-    p { 
-       float:left;
-        width: 100%;
-        font-size: 12px;
-       }
-       nav {
-        background-color: white;
-        position: absolute;
-        top: 8px;
-        padding: 10px;
-        
-        height: 40px;
-        width: 211px;
-        margin-right: 1%;   
-        margin-bottom: 2%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-    }
-      
 
-     }
+  .content {
+      height: 600px;
+      width: 100%;
+  }
 
+  
+      figure {
+          width: 100%;
+          float: left;  }
 
+      }
